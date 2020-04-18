@@ -1,0 +1,22 @@
+{
+  "name": "demodatetime",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dickensas/demodatetime.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dickensas/demodatetime/issues"
+  },
+  "homepage": "https://github.com/dickensas/demodatetime#readme",
+  "dependencies": {
+    "punch": "^0.5.46"
+  }
+}
