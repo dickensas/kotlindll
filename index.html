@@ -5,12 +5,15 @@
   style="width:100%;height:100%;"
 >
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
 <script>
-new Promise(resolve=>{
-    // Get the json file based on the offset
-    $.getJSON('/.netlify/functions/server/getdate', resolve);
-})
-.then(json=>{
-    console.log(json);
-})
+$(document).ready(function() {
+	new Promise(resolve=>{
+		// Get the json file based on the offset
+		$.getJSON('/.netlify/functions/server/getdate', resolve);
+	})
+	.then(json=>{
+		console.log(json);
+	})
+});
 </script>
