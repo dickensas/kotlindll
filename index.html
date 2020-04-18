@@ -14,6 +14,22 @@ $(document).ready(function() {
 	})
 	.then(json=>{
 		console.log(json);
-	})
+		var serverDate = new Date(json.date);
+		if (
+			serverDate.getFullYear() == 2020 
+			&& 
+			serverDate.getMonth() == 3
+			&&
+			serverDate.getDate() == 18
+		)
+		{
+			new Promise(resolve1=>{
+				$.getJSON("file-1.json", resolve1);
+			})
+			.then(json1=>{
+				console.log(json1);
+			});
+		}
+	});
 });
 </script>
