@@ -28,7 +28,7 @@ $(document).ready(function() {
 			})
 			.then(json1=>{
 				console.log(json1);
-				for(var i=0;i<json1;i++) {
+				for(var i=0;i<json1.length;i++) {
 					$("#colors").html("");
 					$("#colors").append("<div>" + json1[i] + "</div>");
 				}
