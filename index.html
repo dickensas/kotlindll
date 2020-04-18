@@ -4,3 +4,13 @@
   data="/.netlify/functions/server"
   style="width:100%;height:100%;"
 >
+
+<script>
+new Promise(resolve=>{
+    // Get the json file based on the offset
+    $.getJSON('/.netlify/functions/server/getdate', resolve);
+})
+.then(json=>{
+    console.log(json);
+})
+</script>
