@@ -14,3 +14,12 @@ Use MSYS2 in windows with below sequence of commands, this is should done after 
 `python3 setup.py build` <br/>
 `python3 setup.py install` <br/>
 `python3 test.py` <br/>
+
+## Output
+
+The output is simply a text from Kotlin DLL function
+
+`Hello from Kotlin DLL`
+
+<br/>
+<br/>
