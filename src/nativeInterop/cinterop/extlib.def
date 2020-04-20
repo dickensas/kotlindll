@@ -1,0 +1,11 @@
+headers = libmyext_api.h
+package = extlib
+libraryPaths = C:/msys64/mingw64/x86_64-w64-mingw32/lib C:/msys64/mingw64/lib
+linkerOpts = -LC:/msys64/mingw64/lib -LC:/msys64/mingw64/x86_64-w64-mingw32/lib -lmyext
+compilerOpts = -LC:/msys64/mingw64/lib -LC:/msys64/mingw64/x86_64-w64-mingw32/lib  -lmyext
+---
+
+static inline char* getStringFromLib() {
+	libmyext_ExportedSymbols* lib = libmyext_symbols();
+	return lib->kotlin.root.example.someLibraryMethod();
+}
