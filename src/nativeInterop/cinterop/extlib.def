@@ -9,3 +9,9 @@ static inline char* getStringFromLib() {
 	libmyext_ExportedSymbols* lib = libmyext_symbols();
 	return lib->kotlin.root.example.someLibraryMethod();
 }
+
+char* myFun() {
+  return "hello";
+}
+
+typedef char* (*MyFun)();

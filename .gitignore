@@ -6,3 +6,7 @@ build
 /.settings/
 /.classpath
 /.project
+/libmyext.dll
+/libmyext.dll.a
+/libmyext_api.h
+/.pydevproject

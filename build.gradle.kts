@@ -1,5 +1,11 @@
+buildscript {
+	dependencies {
+		classpath("com.linkedin.pygradle:pygradle-plugin:0.12.10")
+	}
+}
+
 plugins {
-    id("org.jetbrains.kotlin.multiplatform") version "1.3.72"
+    id("org.jetbrains.kotlin.multiplatform") version("1.3.72")
 }
 
 repositories {
@@ -51,6 +57,7 @@ tasks {
         from("${project.rootDir}/build/bin/libmyext/debugShared") {
             include("libmyext.dll")
             include("libmyext.dll.a")
+            include("libmyext_api.h")
         }
         into("${project.rootDir}")
     }
